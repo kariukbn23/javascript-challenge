@@ -14,9 +14,9 @@ function displayData(data){
 
     data.forEach(function(sighting){
     
-//     // The captured values then need to added to a new tree of data
+    // The captured values then need to added to a new tree of data
 
-//     new_tree = tbody.append("tr")
+    new_tree = tbody.append("tr")
 
 //     // We can use object enteries now to get specific key/value pairs from the data dictionary
 
