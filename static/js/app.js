@@ -30,20 +30,27 @@ function displayData(data){
 displayData(tableData)
 
 //Prior to creating parameters for filter we need to establish user input variables
+
 var userInputDate = d3.select("#datetime")
 var button = d3.select("filter-btn")
 
-// // Next create a function that recognizes the user input
-// function clickSelect(){
-//     //don't refresh the page!
-//     d3.event.preventDefault();
-//     //print the value that was input
-//     console.log(userInputDate.property("value"));
-//     //create a new table showing only the filterd data
-//     var new_table = tableData.filter(sighting => sighting.datetime===dateInputText.property("value"))
+// Next create a function that recognizes the user input
+
+function clickSelect(){
+    
+    //The following event prevents the page from automatically refreshing 
+    
+    d3.event.preventDefault();
+    
+    //Last, we create a final table with the filter information
+    
+    var new_datatableFinal = tableData.filter(sighting => sighting.datetime===dateInputText.property("value"))
+    
 //     //display the new table
+    
 //     displayData(new_table);
 // }
 
 // // event listener to handle change and click
+
 // userInputDate.on("change", clickSelect)
