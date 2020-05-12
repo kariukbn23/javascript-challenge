@@ -33,4 +33,7 @@ displayData(tableData)
 // This will serve as the interactive capabilities of the site. 
 
 function handleClick(){
+    // The follow d3 function prevents from the page refreshing upon choosing filter settings
+    d3.event.preventDefault()
+
     
