@@ -36,4 +36,7 @@ function handleClick(){
     // The follow d3 function prevents from the page refreshing upon choosing filter settings
     d3.event.preventDefault()
 
+    // Now need to establish variables that the function will recognize as user input and provide it specific parameters
+    let userInputDate = d3.select("#datetime").property("value");
+    let new_tabledataFinal = tableData;
     
