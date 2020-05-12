@@ -42,10 +42,13 @@ function clickSelect(){
     
     d3.event.preventDefault();
 
-//     //create a new table showing only the filterd data
-//     var new_table = tableData.filter(sighting => sighting.datetime===date.property("value"))
+    //New varibale that holds the filter criteria must be created where the key values are captured
+    
+    var new_datatableFinal = tableData.filter(sighting => sighting.datetime===date.property("value"))
+    
 //     //display the new table
-//     displayData(new_table);
+    
+//     displayData(new_datatableFinal);
 // }
 
 // // event listener to handle change and click
