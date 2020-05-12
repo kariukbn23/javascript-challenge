@@ -38,8 +38,9 @@ var button = d3.select("filter-btn")
 
 function clickSelect(){
     
-//     //don't refresh the page!
-//     d3.event.preventDefault();
+    //Event caller to not refresh by default, unless the enter button is hit
+    
+    d3.event.preventDefault();
 
 //     //create a new table showing only the filterd data
 //     var new_table = tableData.filter(sighting => sighting.datetime===date.property("value"))
