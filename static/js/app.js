@@ -18,10 +18,13 @@ function displayData(data){
 
     new_tree = tbody.append("tr")
 
-//     // We can use object enteries now to get specific key/value pairs from the data dictionary
+    // We can use object enteries now to get specific key/value pairs from the data dictionary
 
-//     Object.entries(sighting).forEach(function([key, value]){
-//         new_tabledata = new_tree.append("td").text(value)	
-//     })
-// })}
+    Object.entries(sighting).forEach(function([key, value]){
+        new_tabledata = new_tree.append("td").text(value)	
+    })
+})}
 
+// Display captured data 
+
+displayData(tableData)
