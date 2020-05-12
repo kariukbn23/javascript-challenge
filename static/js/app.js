@@ -46,10 +46,10 @@ function clickSelect(){
     
     var new_datatableFinal = tableData.filter(sighting => sighting.datetime===date.property("value"))
     
-//     //display the new table
+    //Display new data table
     
-//     displayData(new_datatableFinal);
-// }
+    displayData(new_datatableFinal);
+}
 
-// // event listener to handle change and click
-// date.on("change", clickSelect)
+//Event lister to handle user clicks and changes made to the document 
+date.on("change", clickSelect)
