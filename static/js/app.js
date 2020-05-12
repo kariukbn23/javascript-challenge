@@ -28,3 +28,9 @@ function displayData(data){
 // Display captured data 
 
 displayData(tableData)
+
+// Next need to create a function/loop that recognizes variable inputs from the user
+// This will serve as the interactive capabilities of the site. 
+
+function handleClick(){
+    
