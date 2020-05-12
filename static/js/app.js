@@ -30,11 +30,14 @@ function displayData(data){
 displayData(tableData)
 
 //Establish variables for function that will serve as user inputs
+
 var date = d3.select("#datetime")
 var button = d3.select("filter-btn")
 
-// // filter data with date that the user inputs
-// function clickSelect(){
+// Establish function that grabs user date 
+
+function clickSelect(){
+    
 //     //don't refresh the page!
 //     d3.event.preventDefault();
 
