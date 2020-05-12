@@ -10,9 +10,9 @@ console.log("Hello & Welcome to BK's Code")
 function displayData(data){ 
     tbody.html("");
 
-//     // Next create loop that goes through data to capture specific data points we need
+    // Next create loop that goes through data to capture specific data points we need
 
-//     data.forEach(function(sighting){
+    data.forEach(function(sighting){
     
 //     // The captured values then need to added to a new tree of data
 
